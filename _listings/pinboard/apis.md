@@ -1,13 +1,16 @@
 ---
 name: Pinboard
 x-slug: pinboard
-description: veni, vidi, tweeti
+description: Pinboard is a bookmarking website for introverted people in a hurry.
+  The focus of the site is less on socializing, and more on speed and utility. Pinboard
+  tries to offer useful features without getting in your way. My highest priority
+  is keeping your data safe over the long term.
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/240-pinboard.jpg
 x-kinRank: "9"
-x-alexaRank: "44671"
+x-alexaRank: "45688"
 tags: Posts
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/pinboard/apis.md
 specificationVersion: "0.14"
 apis:
@@ -112,7 +115,10 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/pinboard/postssuggest-get-openapi.md
 - name: Pinboard
   x-api-slug: pinboard
-  description: veni, vidi, tweeti
+  description: Pinboard is a bookmarking website for introverted people in a hurry.
+    The focus of the site is less on socializing, and more on speed and utility. Pinboard
+    tries to offer useful features without getting in your way. My highest priority
+    is keeping your data safe over the long term.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/240-pinboard.jpg
   humanURL: http://pinboard.in
   baseURL: https://api.pinboard.in//v1
