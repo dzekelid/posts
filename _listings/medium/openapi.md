@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Medium
 x-complete: 1
@@ -51,7 +50,7 @@ paths:
   /users/{authorId}/posts:
     post:
       summary: Create User Post
-      description: "Creates a post on the authenticated user\u2019s profile."
+      description: Creates a post on the authenticated user???s profile.
       operationId: users.authorId.posts.post
       x-api-path-slug: usersauthoridposts-post
       parameters:
@@ -70,4 +69,3 @@ paths:
       - Users
       - Author
       - Posts
----

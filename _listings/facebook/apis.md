@@ -7,73 +7,78 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebo
 x-kinRank: "9"
 x-alexaRank: "3"
 tags: Posts
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Facebook Get Application Adds
-  x-api-slug: facebook
+- name: Facebook - Get Application Adds
+  x-api-slug: applicationposts-get
   description: The application's own posts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
-  baseURL: https://graph.facebook.com////{application}/posts
-  tags: Application,Posts
+  baseURL: https://graph.facebook.com//
+  tags: Social, My API Stack, Indie EdTech Data Jam, Issues Example, Facebook Stack,
+    Stack Network, Stack, internet, Technology, Mobile, API Provider, Social, Social
+    Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
+    Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/applicationposts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/applicationposts-get-openapi.md
-- name: Facebook Get Page Adds
-  x-api-slug: facebook
+- name: Facebook - Get Page Adds
+  x-api-slug: pageposts-get
   description: The page's own posts
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
-  baseURL: https://graph.facebook.com////{page}/posts
-  tags: Page,Posts
+  baseURL: https://graph.facebook.com//
+  tags: Social, My API Stack, Indie EdTech Data Jam, Issues Example, Facebook Stack,
+    Stack Network, Stack, internet, Technology, Mobile, API Provider, Social, Social
+    Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
+    Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/pageposts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/pageposts-get-openapi.md
-- name: Facebook Get User Adds
-  x-api-slug: facebook
+- name: Facebook - Get User Adds
+  x-api-slug: userposts-get
   description: The user's posts
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
-  baseURL: https://graph.facebook.com////{user}/posts
-  tags: User,Posts
+  baseURL: https://graph.facebook.com//
+  tags: Social, My API Stack, Indie EdTech Data Jam, Issues Example, Facebook Stack,
+    Stack Network, Stack, internet, Technology, Mobile, API Provider, Social, Social
+    Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
+    Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/userposts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/userposts-get-openapi.md
-- name: Facebook Post User Adds
-  x-api-slug: facebook
+- name: Facebook - Post User Adds
+  x-api-slug: userposts-post
   description: Creates a post on behalf of the user
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
   humanURL: http:///business
-  baseURL: https://graph.facebook.com////{user}/posts
-  tags: User,Posts
+  baseURL: https://graph.facebook.com//
+  tags: Social, My API Stack, Indie EdTech Data Jam, Issues Example, Facebook Stack,
+    Stack Network, Stack, internet, Technology, Mobile, API Provider, Social, Social
+    Networks, Profiles, Payments, General Data, Relative Data, Pedestal, Historical
+    Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/userposts-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/userposts-post-openapi.md
-- name: Facebook
-  x-api-slug: facebook
-  description: Create an account or log into Facebook. Connect with friends, family
-    and other people you know. Share photos and videos, send messages and get updates.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/196-facebook.jpg
-  humanURL: http:///business
-  baseURL: https://graph.facebook.com//
-  tags: Posts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/facebook/openapi.md
 x-common:
 - type: x-android-sdk
   url: https://developers.facebook.com/docs/android/share
+- type: x-api-gallery
+  url: http://expedia.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://facebook.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/facebook/apidescription?format=internal&ver=1386216190000
 - type: x-application-gallery

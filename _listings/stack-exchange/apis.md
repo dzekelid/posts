@@ -9,13 +9,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-
 x-kinRank: "8"
 x-alexaRank: "126"
 tags: Posts
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stack Exchange Get Posts
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Posts
+  x-api-slug: posts-get
   description: "Fetches all posts (questions and answers) on the site.\n \nIn many
     ways this method is the union of /questions and /answers, returning both sets
     of data albeit only the common fields.\n \nMost applications should use the question
@@ -29,15 +29,17 @@ apis:
     posts."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts
-  tags: Posts
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/posts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/posts-get-openapi.md
-- name: Stack Exchange Get Post
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Post
+  x-api-slug: postsids-get
   description: "Fetches a set of posts by ids.\n \nThis method is meant for grabbing
     an object when unsure whether an id identifies a question or an answer. This is
     most common with user entered data.\n \n{ids} can contain up to 100 semicolon
@@ -49,15 +51,17 @@ apis:
     and todate.\n \nThis method returns a list of posts."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts/{ids}
-  tags: Posts
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsids-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsids-get-openapi.md
-- name: Stack Exchange Get Post Comments
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Post Comments
+  x-api-slug: postsidscomments-get
   description: "Gets the comments on the posts identified in ids, regardless of the
     type of the posts.\n \nThis method is meant for cases when you are unsure of the
     type of the post id provided. Generally, this would be due to obtaining the post
@@ -70,30 +74,34 @@ apis:
     method returns a list of comments."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts/{ids}/comments
-  tags: Posts,Comments
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidscomments-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidscomments-get-openapi.md
-- name: Stack Exchange Get Post Revisions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Post Revisions
+  x-api-slug: postsidsrevisions-get
   description: "Returns edit revisions for the posts identified in ids.\n \n{ids}
     can contain up to 100 semicolon delimited ids, to find ids programatically look
     for post_id, answer_id, or question_id on post, answer, and question objects respectively.\n
     \nThis method returns a list of revisions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts/{ids}/revisions
-  tags: Posts,Revisions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidsrevisions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidsrevisions-get-openapi.md
-- name: Stack Exchange Get Posts Suggested Edits
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Posts Suggested Edits
+  x-api-slug: postsidssuggestededits-get
   description: "Returns suggsted edits on the posts identified in ids.\n \n - creation
     - creation_date\n - approval - approval_date\n - rejection - rejection_date\n
     \ creation is the default sort.\n \n {ids} can contain up to 100 semicolon delimited
@@ -102,40 +110,35 @@ apis:
     of suggested-edits."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts/{ids}/suggested-edits
-  tags: Posts,Suggested Edits
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidssuggestededits-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidssuggestededits-get-openapi.md
-- name: Stack Exchange Add Comment Post
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Add Comment Post
+  x-api-slug: postsidcommentsadd-post
   description: "Create a new comment.\n \nUse an access_token with write_access to
     create a new comment on a post.\n \nThis method returns the created comment."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//posts/{id}/comments/add
-  tags: Posts,Comments
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidcommentsadd-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/postsidcommentsadd-post-openapi.md
-- name: Stack Exchange
-  x-api-slug: stack-exchange
-  description: After someone asks a question, members of the community propose answers.
-    Others vote on those answers. Very quickly, the answers with the most votes rise
-    to the top. You dont have to read through a lot of discussion to find the best
-    answer.    Like to...
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
-  humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2
-  tags: Posts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/stack-exchange/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://square.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://stack.exchange.stack.network
 - type: x-authentication
   url: https://api.stackexchange.com/docs/authentication
 - type: x-base

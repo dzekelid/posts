@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Tumblr
 x-complete: 1
@@ -33,7 +32,7 @@ paths:
         description: A specific post ID
       - in: query
         name: limit
-        description: 'The number of posts to return: 120, inclusive'
+        description: 'The number of posts to return: 1???20, inclusive'
       - in: query
         name: notes_info
         description: Indicates whether to return notes information (specify true or
@@ -117,4 +116,3 @@ paths:
       - Hostname
       - Posts
       - Submission
----

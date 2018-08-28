@@ -8,73 +8,55 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "95684"
 tags: Posts
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Mattermost API Get a channels pinned posts
-  x-api-slug: mattermost-api
+- name: Mattermost API Reference - Get a channels pinned posts
+  x-api-slug: channelschannel-idpinned-get
   description: Get a list of pinned posts for channel.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
   humanURL: https://mattermost.com
-  baseURL: https://your-mattermost-url.com//api/v4//channels/{channel_id}/pinned
-  tags: Channels,Pinned,Posts
+  baseURL: https://your-mattermost-url.com//api/v4
+  tags: Enterprise, SaaS, Technology, Cloud, API Provider, API Service Provider, Profiles,
+    Relative Data, Service API, Networks
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/channelschannel-idpinned-get-openapi.md
-- name: Mattermost API Get a list of flagged posts
-  x-api-slug: mattermost-api
+- name: Mattermost API Reference - Get a list of flagged posts
+  x-api-slug: usersuser-idpostsflagged-get
   description: |-
     Get a page of flagged posts of a user provided user id string. Selects from a channel, team or all flagged posts by a user.
     ##### Permissions
     Must be user or have `manage_system` permission.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
   humanURL: https://mattermost.com
-  baseURL: https://your-mattermost-url.com//api/v4//users/{user_id}/posts/flagged
-  tags: List,Of,Flagged,Posts
+  baseURL: https://your-mattermost-url.com//api/v4
+  tags: Enterprise, SaaS, Technology, Cloud, API Provider, API Service Provider, Profiles,
+    Relative Data, Service API, Networks
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/usersuser-idpostsflagged-get-openapi.md
-- name: Mattermost API Get posts for a channel
-  x-api-slug: mattermost-api
-  description: |-
-    Get a page of posts in a channel. Use the query parameters to modify the behaviour of this endpoint. The parameters `since`, `before` and `after` must not be used together.
-    ##### Permissions
-    Must have `read_channel` permission for the channel.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
-  humanURL: https://mattermost.com
-  baseURL: https://your-mattermost-url.com//api/v4//channels/{channel_id}/posts
-  tags: Postsa,Channel
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/channelschannel-idposts-get-openapi.md
-- name: Mattermost API Search for team posts
-  x-api-slug: mattermost-api
+- name: Mattermost API Reference - Search for team posts
+  x-api-slug: teamsteam-idpostssearch-post
   description: |-
     Search posts in the team and from the provided terms string.
     ##### Permissions
     Must be authenticated and have the `view_team` permission.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
   humanURL: https://mattermost.com
-  baseURL: https://your-mattermost-url.com//api/v4//teams/{team_id}/posts/search
-  tags: Searchteam,Posts
+  baseURL: https://your-mattermost-url.com//api/v4
+  tags: Enterprise, SaaS, Technology, Cloud, API Provider, API Service Provider, Profiles,
+    Relative Data, Service API, Networks
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/teamsteam-idpostssearch-post-openapi.md
-- name: Mattermost API
-  x-api-slug: mattermost-api
-  description: Open source, private cloud Slack-alternative, Workplace messaging for
-    web, PCs and phones. MIT-licensed. Hundreds of contributors. 14 languages. Secure,
-    configurable, and scalable from teams to the enterprise.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
-  humanURL: https://mattermost.com
-  baseURL: https://your-mattermost-url.com//api/v4
-  tags: Posts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/mattermost/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://matrix.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://mattermost.stack.network
 - type: x-blog
   url: https://about.mattermost.com/blog/
 - type: x-blog-rss

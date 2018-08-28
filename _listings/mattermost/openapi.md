@@ -1,12 +1,9 @@
----
 swagger: "2.0"
 x-collection-name: Mattermost
 x-complete: 1
 info:
-  title: Mattermost API Reference
-  description: -api-v4-is-stable-with-the-mattermost-server-4-0-release--api-v3-was-deprecated-on-january-16th-2018-and-scheduled-for-removal-in-mattermost-v5-0--details-heretagapiv3deprecation--looking-for-the-api-v3-reference-it-has-moved-herehttpsapi-mattermost-comv3-
-  termsOfService: https://about.mattermost.com/default-terms/
-  version: 4.0.0
+  title: Mattermost
+  version: 1.0.0
 host: your-mattermost-url.com
 basePath: /api/v4
 schemes:
@@ -66,41 +63,6 @@ paths:
       - Of
       - Flagged
       - Posts
-  /channels/{channel_id}/posts:
-    get:
-      summary: Get posts for a channel
-      description: |-
-        Get a page of posts in a channel. Use the query parameters to modify the behaviour of this endpoint. The parameters `since`, `before` and `after` must not be used together.
-        ##### Permissions
-        Must have `read_channel` permission for the channel.
-      operationId: get-a-page-of-posts-in-a-channel-use-the-query-parameters-to-modify-the-behaviour-of-this-endpoint-t
-      x-api-path-slug: channelschannel-idposts-get
-      parameters:
-      - in: query
-        name: after
-        description: A post id to select the posts that came after this one
-      - in: query
-        name: before
-        description: A post id to select the posts that came before this one
-      - in: path
-        name: channel_id
-        description: The channel ID to get the posts for
-      - in: query
-        name: page
-        description: The page to select
-      - in: query
-        name: per_page
-        description: The number of posts per page
-      - in: query
-        name: since
-        description: Provide a non-zero value in Unix time milliseconds to select
-          posts created after that time
-      responses:
-        200:
-          description: OK
-      tags:
-      - Postsa
-      - Channel
   /teams/{team_id}/posts/search:
     post:
       summary: Search for team posts
@@ -125,4 +87,3 @@ paths:
       tags:
       - Searchteam
       - Posts
----

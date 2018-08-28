@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Stack Exchange
 x-complete: 1
@@ -314,4 +313,3 @@ paths:
       tags:
       - Posts
       - Comments
----

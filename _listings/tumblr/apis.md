@@ -7,81 +7,74 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr
 x-kinRank: "7"
 x-alexaRank: "59"
 tags: Posts
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Tumblr Get Blog Base Hostname Adds Type
-  x-api-slug: tumblr
+- name: Tumblr - Get Blog Base Hostname Adds Type
+  x-api-slug: blogbasehostnamepoststype-get
   description: Retrieves published posts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
   humanURL: https://www.tumblr.com/
-  baseURL: https://api.tumblr.com//v2///blog/{base-hostname}/posts/{type}
-  tags: Blog, Base, Hostname, Posts, Type
+  baseURL: https://api.tumblr.com//v2/
+  tags: Blog, Social, Content, Communications, Blogging, Communications, Stack, Media,
+    Technology, internet, Mobile, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepoststype-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepoststype-get-openapi.md
-- name: Tumblr Get Blog Base Hostname Adds Queue
-  x-api-slug: tumblr
+- name: Tumblr - Get Blog Base Hostname Adds Queue
+  x-api-slug: blogbasehostnamepostsqueue-get
   description: Retrieves queued posts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
   humanURL: https://www.tumblr.com/
-  baseURL: https://api.tumblr.com//v2///blog/{base-hostname}/posts/queue
-  tags: Blog, Base, Hostname, Posts, Queue
+  baseURL: https://api.tumblr.com//v2/
+  tags: Blog, Social, Content, Communications, Blogging, Communications, Stack, Media,
+    Technology, internet, Mobile, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostsqueue-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostsqueue-get-openapi.md
-- name: Tumblr Get Blog Base Hostname Adds Draft
-  x-api-slug: tumblr
+- name: Tumblr - Get Blog Base Hostname Adds Draft
+  x-api-slug: blogbasehostnamepostsdraft-get
   description: Retrieves draft posts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
   humanURL: https://www.tumblr.com/
-  baseURL: https://api.tumblr.com//v2///blog/{base-hostname}/posts/draft
-  tags: Blog, Base, Hostname, Posts, Draft
+  baseURL: https://api.tumblr.com//v2/
+  tags: Blog, Social, Content, Communications, Blogging, Communications, Stack, Media,
+    Technology, internet, Mobile, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostsdraft-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostsdraft-get-openapi.md
-- name: Tumblr Get Blog Base Hostname Adds Submission
-  x-api-slug: tumblr
+- name: Tumblr - Get Blog Base Hostname Adds Submission
+  x-api-slug: blogbasehostnamepostssubmission-get
   description: Retrieves submission posts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
   humanURL: https://www.tumblr.com/
-  baseURL: https://api.tumblr.com//v2///blog/{base-hostname}/posts/submission
-  tags: Blog, Base, Hostname, Posts, Submission
+  baseURL: https://api.tumblr.com//v2/
+  tags: Blog, Social, Content, Communications, Blogging, Communications, Stack, Media,
+    Technology, internet, Mobile, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostssubmission-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/blogbasehostnamepostssubmission-get-openapi.md
-- name: Tumblr
-  x-api-slug: tumblr
-  description: Tumblr, is a microblogging platform, emphasizing ease of use, that
-    allows users to post text, images, videos, links, quotes and audio to their tumblelog,
-    a short-form blog. Users can follow other users, or choose to make their tumblelog
-    private.The Tumblr API is currently in its version 2.0, and provides a RESTful
-    API that takes advantage of a URI structured including version system(such as
-    blog or user), and allows blog owners to use a custom tumblr blog URL or custom
-    domains. The API uses OAuth for user authentication and all responses in JSON,
-    with JSONP also available. The API provides access to Tumblr Blogs in addition
-    to other characteristics like avatars, followers, photos, audio, video and other
-    user related information.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
-  humanURL: https://www.tumblr.com/
-  baseURL: https://api.tumblr.com//v2/
-  tags: Posts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/tumblr/openapi.md
 x-common:
 - type: x-api-json--authoritative
   url: http://apis.io/apisdef/legacy/tumblr.json
+- type: x-api-gallery
+  url: http://tropo.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://tumblr.stack.network
 - type: x-base
   url: http://api.tumblr.com
 - type: x-blog

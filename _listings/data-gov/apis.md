@@ -12,102 +12,97 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Posts
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Data.gov API Posts
-  x-api-slug: data-gov-api
+- name: Data.gov API - Posts
+  x-api-slug: posts-get
   description: List all posts
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/
-  tags: Posts
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/posts-get-openapi.md
-- name: Data.gov API Add Post
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Post
+  x-api-slug: posts-post
   description: Create a post
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/
-  tags: Posts
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/posts-post-openapi.md
-- name: Data.gov API Delete Post
-  x-api-slug: data-gov-api
+- name: Data.gov API - Delete Post
+  x-api-slug: postspost-delete
   description: Delete a given post
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/{post}/
-  tags: Posts
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspost-delete-openapi.md
-- name: Data.gov API Get Post
-  x-api-slug: data-gov-api
+- name: Data.gov API - Get Post
+  x-api-slug: postspost-get
   description: Get a given post
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/{post}/
-  tags: Posts
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspost-get-openapi.md
-- name: Data.gov API Update Post
-  x-api-slug: data-gov-api
+- name: Data.gov API - Update Post
+  x-api-slug: postspost-put
   description: Update a given post
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/{post}/
-  tags: Posts
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspost-put-openapi.md
-- name: Data.gov API Add Post Image
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Post Image
+  x-api-slug: postspostimage-post
   description: Upload a new image
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/{post}/image
-  tags: Posts, Images
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspostimage-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspostimage-post-openapi.md
-- name: Data.gov API Update Post Image
-  x-api-slug: data-gov-api
+- name: Data.gov API - Update Post Image
+  x-api-slug: postspostimage-put
   description: Set the image BBox
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///posts/{post}/image
-  tags: Posts, Images
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspostimage-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/postspostimage-put-openapi.md
-- name: Data.gov API
-  x-api-slug: data-gov-api
-  description: data.gov is a U.S. government website launched in late May 2009 by
-    the then Federal Chief Information Officer (CIO) of the United States, Vivek Kundra.
-    According to its website, The purpose of data.gov is to increase public access
-    to high value, machine readable datasets generated by the Executive Branch of
-    the Federal Government. The site seeks to become a repository for all the information
-    the government collects. The site would publish to the public any data that is
-    not private or restricted for national security reasons.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
-  humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3/
-  tags: Posts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/posts/master/_listings/data-gov/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://danske.bank.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://data.gov.stack.network
 - type: x-blog
   url: https://www.data.gov/meta/
 - type: x-blog-rss
